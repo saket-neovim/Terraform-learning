@@ -56,5 +56,17 @@ variable "nsg_port_map" {
     "https" = 443
     "app"   = 8080
     "db"    = 3306
+    "redis" = 6379
   }
+}
+
+variable "route_tables" {
+  description = "map of route tables to create"
+  type        = map(string)
+  default = {
+    "public"  = "Internet-facing routes"
+    "private" = "Internal-only routes"
+    "gateway" = "Gateway routes"
+  }
+
 }
