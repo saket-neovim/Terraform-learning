@@ -17,8 +17,3 @@
 #   description = "ID of the network security group"
 #   value       = azurerm_network_security_group.app.id
 # }
-
-# network_security_group_id = "/subscriptions/f494677c-c695-4fff-9d7f-160c71b88534/resourceGroups/lab-rg/providers/Microsoft.Network/networkSecurityGroups/lab-nsg"
-# resource_group_id = "/subscriptions/f494677c-c695-4fff-9d7f-160c71b88534/resourceGroups/lab-rg"
-# subnet_id = "/subscriptions/f494677c-c695-4fff-9d7f-160c71b88534/resourceGroups/lab-rg/providers/Microsoft.Network/virtualNetworks/lab-vnet/subnets/lab-subnet"
-# virtual_network_id = "/subscriptions/f494677c-c695-4fff-9d7f-160c71b88534/resourceGroups/lab-rg/providers/Microsoft.Network/virtualNetworks/lab-vnet"
