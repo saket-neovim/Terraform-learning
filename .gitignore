@@ -42,3 +42,20 @@ terraform.rc
 # Optional: ignore plan files saved before destroying Terraform configuration
 # Uncomment the line below if you want to ignore planout files.
 # planout
+
+# Local environment and editor artifacts
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Saved plans and local backend coordinates
+tfplan
+*.tfplan
+backend.hcl
+*.backend.hcl
+!*.tfvars.example
+!backend.hcl.example

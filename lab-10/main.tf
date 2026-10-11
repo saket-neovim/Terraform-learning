@@ -13,7 +13,7 @@ resource "azurerm_resource_group" "main" {
 
 import {
   to = azurerm_virtual_network.main
-  id = "/subscriptions/f494677c-c695-4fff-9d7f-160c71b88534/resourceGroups/lab-rg/providers/Microsoft.Network/virtualNetworks/lab-vnet"
+  id = var.import_vnet_id
 
 }
 
@@ -33,7 +33,7 @@ resource "azurerm_virtual_network" "main" {
 
 import {
   to = azurerm_subnet.app
-  id = "/subscriptions/f494677c-c695-4fff-9d7f-160c71b88534/resourceGroups/lab-rg/providers/Microsoft.Network/virtualNetworks/lab-vnet/subnets/lab-subnet"
+  id = var.import_subnet_id
 
 }
 
@@ -47,7 +47,7 @@ resource "azurerm_subnet" "app" {
 
 import {
   to = azurerm_network_security_group.main
-  id = "/subscriptions/f494677c-c695-4fff-9d7f-160c71b88534/resourceGroups/lab-rg/providers/Microsoft.Network/networkSecurityGroups/lab-nsg"
+  id = var.import_nsg_id
 }
 
 resource "azurerm_network_security_group" "main" {

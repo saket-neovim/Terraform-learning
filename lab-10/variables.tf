@@ -33,3 +33,18 @@ variable "subnet_cidr" {
   type        = string
   default     = "10.0.1.0/24"
 }
+
+variable "import_vnet_id" {
+  description = "Full Azure resource ID of the existing lab virtual network; configure locally before importing."
+  type        = string
+}
+
+variable "import_subnet_id" {
+  description = "Full Azure resource ID of the existing lab subnet; configure locally before importing."
+  type        = string
+}
+
+variable "import_nsg_id" {
+  description = "Full Azure resource ID of the existing lab network security group; configure locally before importing."
+  type        = string
+}
